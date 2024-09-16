@@ -1,0 +1,31 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # or whatever branch you want to deploy from
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js (if you're using Node.js)
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'  # Change the version to your requirement
+
+    - name: Install dependencies
+      run: npm install  # Use this step only if you need to install dependencies
+
+    - name: Build project (if you need to build your project)
+      run: npm run build  # Replace this with your build command if necessary
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist  # Replace this with your build output directory (e.g., "public" for some frameworks)
