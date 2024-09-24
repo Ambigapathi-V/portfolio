@@ -1,9 +1,16 @@
-/********** Project1 Page CSS **********/
 :root {
-    --primary: #00B87B;
-    --secondary: #314355;
-    --light: #F2F2F2;
-    --dark: #2C3E50;
+    --primary: #00B87B;  /* Main accent color */
+    --secondary: #314355; /* Darker background color */
+    --light: #F2F2F2;     /* Light background color */
+    --dark: #2C3E50;      /* Dark text color */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary); /* Set background color to secondary */
+    color: var(--light);               /* Light text color */
+    margin: 0;
+    padding: 0;
 }
 
 #spinner {
@@ -97,7 +104,6 @@
     0% {
         transform: translateY(0);
     }
-
     100% {
         transform: translateY(-15px);
     }
@@ -107,7 +113,6 @@
     0% {
         transform: translateY(0);
     }
-
     100% {
         transform: translateY(-15px);
     }
@@ -264,7 +269,7 @@
 
 .project-detail-section {
     padding: 60px 0;
-    background: var(--light);
+    background: var(--light); /* Retain light background for this section */
 }
 
 .container {

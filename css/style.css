@@ -511,3 +511,11 @@
       width: 40px;
   }
 }
+
+.blog-image {
+  background-image: url('img/linear-icons-with-charts-and-statistics-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  position: relative;
+}
