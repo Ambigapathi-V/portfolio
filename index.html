@@ -57,7 +57,7 @@
                             <a class="btn btn-secondary btn-square mx-1" href="#"><i class="fab fa-instagram"></i></a>
                         </div>
                         <div class="d-flex align-items-end justify-content-between border-top">
-                            <a href="" class="btn w-50 border-end">Download CV</a>
+                            <a href="img/Ambigapathi_Data_scientist.pdf" class="btn w-50 border-end">Download CV</a>
                             <a href="mailto:ambigapathikavin2@gmail.com" class="btn w-50 btn-scroll">Contact Me</a>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                                 <span class="fw-medium text-primary">Email:</span> ambigapathikavin2@gmail.com
                             </div>
                             <div class="col-sm-6 py-1">
-                                <span class="fw-medium text-primary">Address:</span> pudhureddiyur ,mettur salem-636404
+                                <span class="fw-medium text-primary">Address:</span> Salem
                             </div>
                             <div class="col-sm-6 py-1">
                                 <span class="fw-medium text-primary">Freelance:</span> Available
@@ -103,28 +103,28 @@
                     <div class="row g-4">
                         <div class="col-md-4 col-lg-6 col-xl-4">
                             <div class="d-flex bg-secondary p-4">
+                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">1</h1>
+                                <div class="ps-3">
+                                    <p class="mb-0">Years of Experience</p>
+                                    <h5 class="mb-0">Personal Projects and Freelance</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6 col-xl-4">
+                            <div class="d-flex bg-secondary p-4">
+                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">3</h1>
+                                <div class="ps-3">
+                                    <p class="mb-0">Completed</p>
+                                    <h5 class="mb-0">Certificates</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-6 col-xl-4">
+                            <div class="d-flex bg-secondary p-4">
                                 <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">10</h1>
                                 <div class="ps-3">
-                                    <p class="mb-0">Years of</p>
-                                    <h5 class="mb-0">Experience</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-6 col-xl-4">
-                            <div class="d-flex bg-secondary p-4">
-                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">100</h1>
-                                <div class="ps-3">
-                                    <p class="mb-0">Happy</p>
-                                    <h5 class="mb-0">Clients</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-6 col-xl-4">
-                            <div class="d-flex bg-secondary p-4">
-                                <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">200</h1>
-                                <div class="ps-3">
-                                    <p class="mb-0">Complete</p>
-                                    <h5 class="mb-0">Projects</h5>
+                                    <p class="mb-0">completed</p>
+                                    <h5 class="mb-0"> Data Science Projects</h5>
                                 </div>
                             </div>
                         </div>
@@ -249,18 +249,41 @@
 <!-- Experience End -->
 
 
-                    <!-- Subscribe Start -->
-                    <section class="wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="bg-secondary text-center p-5">
-                            <h1 class="text-white font-weight-bold">Subscribe My Newsletter</h1>
-                            <p class="text-white">Subscribe and get my latest article in your inbox</p>
-                            <div class="position-relative w-100">
-                                <input class="form-control bg-dark border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                                <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Subscribe End -->
+                   <!-- Subscribe Start -->
+<section class="wow fadeInUp" data-wow-delay="0.1s">
+    <div class="bg-secondary text-center p-5">
+        <h1 class="text-white font-weight-bold">Subscribe to My Newsletter</h1>
+        <p class="text-white">Subscribe and get my latest articles in your inbox</p>
+        <div class="position-relative w-100">
+            <input id="emailInput" class="form-control bg-dark border-0 w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email" required>
+            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2" onclick="subscribe()">Subscribe</button>
+        </div>
+        <div id="message" class="text-white mt-2"></div>
+    </div>
+</section>
+<!-- Subscribe End -->
+
+<script>
+    function subscribe() {
+        const emailInput = document.getElementById('emailInput');
+        const messageDiv = document.getElementById('message');
+        const email = emailInput.value;
+
+        if (email) {
+            // Here you would typically send the email to your backend for processing
+            // For this example, we just display a success message
+            messageDiv.textContent = 'Thank you for subscribing, ' + email + '!';
+            messageDiv.style.color = 'green';
+
+            // Clear the input field
+            emailInput.value = '';
+        } else {
+            messageDiv.textContent = 'Please enter a valid email address.';
+            messageDiv.style.color = 'red';
+        }
+    }
+</script>
+
 
                     <!-- Services Start -->
                     <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
