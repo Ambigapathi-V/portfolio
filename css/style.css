@@ -519,3 +519,34 @@
   height: 200px;
   position: relative;
 }
+
+/* Dark Theme Styles for Contact Section */
+#contact {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+#contact .form-control {
+  border-radius: 0.5rem; /* Rounded corners */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+  background-color: #3C4A55; /* Dark background for inputs */
+  color: #F2F2F2; /* Light text color for inputs */
+}
+
+#contact .form-control::placeholder {
+  color: #B0BEC5; /* Lighter color for placeholder text */
+}
+
+#contact .form-control:focus {
+  border-color: var(--primary); /* Change border color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 160, 100, 0.25); /* Box shadow on focus */
+}
+
+#contact .btn {
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+#contact .btn:hover {
+  background-color: hsl(160, 100%, 26%); /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
