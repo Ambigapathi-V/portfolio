@@ -551,4 +551,43 @@
   transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
+/* Button Styling */
+.filter-btn {
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 12px 25px;
+  background-color: #3C4A55;
+  color: #fff;
+  border: 2px solid #3C4A55;
+  margin: 0 10px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  font-size: 16px;
+}
+
+/* Hover and Active State Styling */
+.filter-btn:hover {
+  background-color: #0056b3;
+  color: #fff;
+  transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+.filter-btn.active {
+  background-color: #28a745;
+  color: #fff;
+  border: 2px solid #28a745;
+}
+
+.filter-btn:focus {
+  outline: none; /* Removes the default blue outline on focus */
+}
+
+/* Responsive Button Styling */
+@media (max-width: 768px) {
+  .filter-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+}
+
+
 
