@@ -616,46 +616,57 @@
         </div>
 
 
-    <!-- Contact Start -->
-    <section class="py-5" id="contact" style="background-color: var(--dark);">
-        <div class="container">
-            <!-- Heading -->
-            <h1 class="title pb-3 mb-5 text-center" style="color: var(--light);">Let’s Connect!</h1> <!-- Change the heading here -->
+ <!-- Contact Start -->
+<section class="py-5" id="contact" style="background-color: var(--dark);">
+    <div class="container">
+        <!-- Heading -->
+        <h1 class="title pb-3 mb-5 text-center" style="color: var(--light);">Let's Connect!</h1>
 
-            <form id="contactForm" action="/send" method="POST" novalidate>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" name="name" placeholder="Your Name" required style="background-color: #3C4A55; color: #F2F2F2; border: none;" aria-label="Your Name">
-                            <label for="name" style="color: var(--light);">Your Name</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-floating">
-                            <input type="email" class="form-control" name="email" placeholder="Your Email" required style="background-color: #3C4A55; color: #F2F2F2; border: none;" aria-label="Your Email">
-                            <label for="email" style="color: var(--light);">Your Email</label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" name="subject" placeholder="Subject" required style="background-color: #3C4A55; color: #F2F2F2; border: none;" aria-label="Subject">
-                            <label for="subject" style="color: var(--light);">Subject</label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-floating">
-                            <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 200px; background-color: #3C4A55; color: #F2F2F2; border: none;" required aria-label="Message"></textarea>
-                            <label for="message" style="color: var(--light);"></label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn" style="background-color: var(--primary); color: white; width: 100%; padding: 1rem; border: none;" type="submit">Send Message</button>
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="2d2e6da9-d050-4e47-b972-1b30c95e5c48">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="text" id="name" class="form-control" name="name" placeholder="Your Name" required 
+                            style="background-color: #3C4A55; color: #F2F2F2; border: none;" 
+                            aria-label="Enter your name">
+                        <label for="name" style="color: var(--light);">Your Name</label>
                     </div>
                 </div>
-            </form>
-        </div>
-    </section>
-    <!-- Contact End -->
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="email" id="email" class="form-control" name="email" placeholder="Your Email" required 
+                            style="background-color: #3C4A55; color: #F2F2F2; border: none;" 
+                            aria-label="Enter your email">
+                        <label for="email" style="color: var(--light);">Your Email</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <input type="text" id="subject" class="form-control" name="subject" placeholder="Subject" required 
+                            style="background-color: #3C4A55; color: #F2F2F2; border: none;" 
+                            aria-label="Enter the subject">
+                        <label for="subject" style="color: var(--light);">Subject</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <textarea id="message" class="form-control" name="message" placeholder="Leave a message here" 
+                            style="height: 200px; background-color: #3C4A55; color: #F2F2F2; border: none;" required 
+                            aria-label="Enter your message"></textarea>
+                        <label for="message" style="color: var(--light);">Message</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn" style="background-color: var(--primary); color: white; width: 100%; padding: 1rem; border: none;" 
+                        type="submit" aria-label="Send your message">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Contact End -->
+
 
 
             <!-- Footer Start -->
