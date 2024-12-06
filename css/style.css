@@ -458,7 +458,7 @@
 }
 
 .card {
-  background-color: #2C3E50; 
+  background-color: #314355; 
   border: none;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
@@ -573,7 +573,7 @@
 
 .filter-btn.active {
   background-color: #28a745;
-  color: #fff;
+  color: #314355;
   border: 2px solid #28a745;
 }
 
